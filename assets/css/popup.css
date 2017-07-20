@@ -1,0 +1,5 @@
+.chart-setting-wrapper { margin-top: 15px }
+#chartPreview { height: 400px; }
+.chart-table tr th, .chart-table tr td{
+    text-align: center;
+}

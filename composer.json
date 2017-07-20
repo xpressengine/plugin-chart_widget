@@ -1,0 +1,49 @@
+{
+  "name": "xpressengine-plugin/chart_widget",
+  "description": "This Package is Xpressengine Plugin - Chart Widget.",
+  "keywords": [
+    "xpressengine",
+    "plugin"
+  ],
+  "license": "LGPL-2.1",
+  "version": "1.0.0",
+  "type": "xpressengine-plugin",
+  "support": {
+    "email": "developers@xpressengine.com"
+  },
+  "authors": [
+    {
+      "name": "XE Developers",
+      "email": "developers@xpressengine.com",
+      "homepage": "http://xpressengine.io",
+      "role": "Developer"
+    }
+  ],
+  "extra": {
+    "xpressengine": {
+      "title": "Chart Widget",
+      "component": {
+        "widget/chart@widget": {
+          "class": "\\Xpressengine\\Plugins\\ChartWidget\\Widgets\\Widget",
+          "name": "Chart 위젯",
+          "description": "Chart 그래프를 출력합니다."
+        },
+        "widget/chart@widget/skin/chart@widgetskin": {
+          "class": "Xpressengine\\Plugins\\ChartWidget\\Skins\\WidgetSkin",
+          "name": "Chart 기본 위젯 스킨",
+          "description": "The Skin supported by Chart Widget plugin."
+        }
+      }
+    }
+  },
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Xpressengine\\Plugins\\ChartWidget\\": "src/"
+    },
+    "classmap": [
+      "skins/widget/WidgetSkin.php"
+    ]
+  }
+}
