@@ -47,7 +47,7 @@ class Plugin extends AbstractPlugin
                             ])->appendTo('head')->load();
 
                             XeFrontend::js([
-                                $this->asset('assets/js/popup.js'),
+                                $this->asset('assets/js/chartSetting.js'),
                                 asset('/assets/core/xe-ui-component/js/xe-chart.js'),
                                 asset('/assets/vendor/bootstrap/js/bootstrap.min.js'),
                                 asset('assets/vendor/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js'),
@@ -58,30 +58,6 @@ class Plugin extends AbstractPlugin
 
                             // output
                             return XePresenter::make('chart_widget::views.widget.popup');
-
-                        }
-                    ]
-                );
-
-                Route::get(
-                    '/popup/edit',
-                    [
-                        'as' => 'chart_widget::popup.edit',
-                        'uses' => function (Request $request) {
-
-                            $title = 'Chart Widget Setting';
-
-                            // set browser title
-                            XeFrontend::title($title);
-
-                            // load css file
-//                            XeFrontend::css($this->asset('assets/style.css'))->load();
-
-                            //header, footer 제거
-                            \XeTheme::selectBlankTheme();
-
-                            // output
-                            return XePresenter::make('chart_widget::views.widget.popup-edit');
 
                         }
                     ]

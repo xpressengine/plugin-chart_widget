@@ -1,5 +1,7 @@
 .chart-setting-wrapper { margin-top: 15px }
-#chartPreview { height: 400px; }
-.chart-table tr th, .chart-table tr td{
-    text-align: center;
-}
+#chartPreview { min-height: 400px; }
+.chart-table tr th, .chart-table tr td{ text-align: center; }
+.chart-table tr th > div { position:relative; }
+.chart-table tr th > div div.sub { position:absolute; top: -40px; right: -10px; display: none; }
+.chart-table tr th > div div.sub.show { display: block; }
+.panel-fixed-footer { position:absolute; right:0; left:0; bottom:0; padding:15px}
