@@ -28,6 +28,7 @@
 
         popChart.chartSettings = true;
         popChart.onload = function () {
+            console.log('load', popChart.ChartSettings);
             popChart.ChartSetting.init({
                 chartType: "{!! array_get($args, 'chart_type', '') !!}",
                 title: "{!! array_get($args, 'chart_title', '') !!}",

@@ -47,8 +47,8 @@ class Plugin extends AbstractPlugin
                             ])->appendTo('head')->load();
 
                             XeFrontend::js([
+                                $this->asset('assets/js/build/XeChart.js'),
                                 $this->asset('assets/js/chartSetting.js'),
-                                asset('/assets/core/xe-ui-component/js/xe-chart.js'),
                                 asset('/assets/vendor/bootstrap/js/bootstrap.min.js'),
                                 asset('assets/vendor/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js'),
                             ])->appendTo('head')->load();

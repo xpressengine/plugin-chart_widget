@@ -15,13 +15,12 @@ class WidgetSkin extends GenericSkin
         XeFrontend::css([
             Plugin::asset('assets/css/popup.css'),
             asset('/assets/vendor/bootstrap/css/bootstrap.min.css'),
-            asset('/assets/vendor/XEIcon/xeicon.min.css'),
+            //asset('/assets/vendor/XEIcon/xeicon.min.css'),
             asset('assets/vendor/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css'),
         ])->appendTo('head')->load();
 
         XeFrontend::js([
-            Plugin::asset('assets/js/chartSetting.js'),
-            asset('/assets/core/xe-ui-component/js/xe-chart.js'),
+            Plugin::asset('assets/js/build/XeChart.js'),
             asset('/assets/vendor/bootstrap/js/bootstrap.min.js'),
             asset('assets/vendor/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js'),
         ])->appendTo('head')->load();

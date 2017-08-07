@@ -1,0 +1,28 @@
+{
+  "name": "chart_widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --profile --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpressengine/plugin-chart_widget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xpressengine/plugin-chart_widget/issues"
+  },
+  "homepage": "https://github.com/xpressengine/plugin-chart_widget#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "c3": "^0.4.15",
+    "d3": "^4.10.0",
+    "webpack": "^3.4.1"
+  }
+}
